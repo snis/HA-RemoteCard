@@ -55,4 +55,4 @@ Together with “horizontal-stack” I get this card:
 ![](Pictures/HA_lovelace_card.png)
 
 This is the raw yaml code for the card, it includes old config from my Harmony Hub and some settings with other integrations:
-(HA_Card.yaml)
+[HA_Card.yaml](HA_Card.yaml)

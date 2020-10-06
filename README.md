@@ -1,4 +1,6 @@
 # Home Assistant Broadlink, Harmony Hub and more.
+![](Pictures/HA_lovelace_card.png)
+
 This is not a card, but clever use of existing ones. Since the release of new firmware for Broadlink it's now possible to have it connected to both cloud and local (f.ex. Home Assistant)
 
 ## Prepare Broadlink device for inclusion in Home Assistant

@@ -1,0 +1,240 @@
+cards:
+  - cards:
+      - aspect_ratio: 1/1
+        color: 'rgb(204, 0, 0)'
+        color_type: card
+        icon: 'mdi:power-off'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: remote.vardagsrumir_remote
+            command: >-
+              b64:JgDSAJKUEzcSNxM3EhISEhITEhISEhM3EjcTNxISERMTEhISEhITEhISExETNxI3ExIRExI3EjgSNxM3EhIRExI4EjcTEhIABf6TlBM3EjcTNxISERMTEhISExETNxI3EzcSEhMSEhISEhMREhMRExMREzcSNxMSERMSOBI3EjgSNxMRExISNxM3EhISAAX+lJQSNxM3ETgSEhMSEhISEhITEjcTNxM2ExETEhISEhITEhISEhITEhE4EzcSEhISEzcSNxM3EjcTEhISEjcTNxISEgANBQAAAAA=
+        type: 'custom:button-card'
+      - color: 'rgb(102, 153, 0)'
+        aspect_ratio: 1/1
+        color_type: card
+        icon: 'mdi:power-on'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: remote.vardagsrumir_remote
+            command: >-
+              b64:JgDSAJKTEzcSNxM3EhISExISEhISExI3EzcROBISExIRExISExISNxMSEhISNxM3ERMTERI4EhITNxI3ExISEhI3EzcSEhMABf2UlBI3EzcSNxMSERMSEhMSEhIRORI3EjcTEhETEhITEhISEjcTEhISEjcTNxMREhMSNxMREzcTNhMSEhIRORI3EhMSAAX9lJQSNxM3EjcSExISEhISExISEjgSNxM3EhIRExMRExISEhI4EhISEhM3EjcTEhISEjcTEhE4EzcSEhMSEjgRNxMSEQANBQAAAAA=
+        type: 'custom:button-card'
+      - color: 'rgb(102, 153, 0)'
+        color_type: card
+        icon: 'mdi:cast-connected'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: remote.vardagsrumir_remote
+            command: >-
+              b64:JgDSAJKUEjcRORI3ExESExISEhITEhE4EzcSNxMSERMSEhMRExISNxMSEhISNxMSEjcSOBI3ExISNxM3EhISNxMSEhISEhMABf2TlRI3EjgSNxMSEhIRExMSEhIROBM3EjcTEhISExETEhISEjcSExISEjgTERI3EjkRNxITEjcTNxISEjgSEhISExISAAX9lJQSOBI3EzcSEhISExISEhISEzcSNxE5EhISEhITEhISEhI4EhIRExI4EhMQORI3EjgSEhI3EzcSEhM3EhISEhMSEQANBQAAAAA=
+        type: 'custom:button-card'
+      - color: 'rgb(102, 153, 0)'
+        color_type: card
+        icon: 'mdi:television-box'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: remote.vardagsrumir_remote
+            command: >-
+              b64:JgDSAJKUEjcTNxI3ExISEhISExISEhI3EzcSNxMSERMSEhMSEhISNxM3EhITNxI3ExIRExISERQSEhI3ExISEhI3EzcSNxMABf6UlBE3EjgSOBISEhISEhMSEhISOBE4EzcSEhETExISEhISETkSNxMREzcSNxMSEhISEhMSEhISOBISEhITNxI3EzcSAAX+lJMSOBI3EzcSEhMREhMSEhISEzcSNxM3EhISEhMSEhITERM3EjcTEhI3EzcSEhISEhMRExISEzcSEhETEzcSNxM3EgANBQAAAAA=
+        type: 'custom:button-card'
+    type: horizontal-stack
+  - cards:
+      - aspect_ratio: 1/1
+        color: 'rgb(102, 153, 255)'
+        color_type: card
+        icon: 'mdi:arrow-up-drop-circle-outline'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            command: ChannelUp
+            device: 52012830
+            entity_id: remote.vardagsrum
+        type: 'custom:button-card'
+      - aspect_ratio: 1/1
+        color_type: card
+        icon: 'mdi:home'
+        tap_action:
+          action: call-service
+          service: androidtv.adb_command
+          service_data:
+            command: HOME
+            entity_id: media_player.nvidia_vardagsrum
+        type: 'custom:button-card'
+      - aspect_ratio: 1/1
+        color: 'rgb(64, 64, 64)'
+        color_type: card
+        icon: 'mdi:chevron-up'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            command: DirectionUp
+            device: 52012830
+            entity_id: remote.vardagsrum
+        type: 'custom:button-card'
+      - aspect_ratio: 1/1
+        color_type: card
+        icon: 'mdi:television-guide'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            command: Guide
+            device: 52012830
+            entity_id: remote.vardagsrum
+        type: 'custom:button-card'
+    type: horizontal-stack
+  - cards:
+      - aspect_ratio: 1/1
+        color: 'rgb(102, 153, 255)'
+        color_type: card
+        icon: 'mdi:undo-variant'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            command: ChannelPrev
+            device: 52012830
+            entity_id: remote.vardagsrum
+        type: 'custom:button-card'
+      - aspect_ratio: 1/1
+        color: 'rgb(64, 64, 64)'
+        color_type: card
+        icon: 'mdi:chevron-left'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            command: DirectionLeft
+            device: 52012830
+            entity_id: remote.vardagsrum
+        type: 'custom:button-card'
+      - aspect_ratio: 1/1
+        color: 'rgb(128, 128, 128)'
+        color_type: card
+        icon: 'mdi:circle'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            command: Select
+            device: 52012830
+            entity_id: remote.vardagsrum
+        type: 'custom:button-card'
+      - aspect_ratio: 1/1
+        color: 'rgb(64, 64, 64)'
+        color_type: card
+        icon: 'mdi:chevron-right'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            command: DirectionRight
+            device: 52012830
+            entity_id: remote.vardagsrum
+        type: 'custom:button-card'
+    type: horizontal-stack
+  - cards:
+      - aspect_ratio: 1/1
+        color: 'rgb(102, 153, 255)'
+        color_type: card
+        icon: 'mdi:arrow-down-drop-circle-outline'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            command: ChannelDown
+            device: 52012830
+            entity_id: remote.vardagsrum
+        type: 'custom:button-card'
+      - aspect_ratio: 1/1
+        color_type: card
+        icon: 'mdi:undo'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            command: Return
+            device: 52012830
+            entity_id: remote.vardagsrum
+        type: 'custom:button-card'
+      - aspect_ratio: 1/1
+        color: 'rgb(64, 64, 64)'
+        color_type: card
+        icon: 'mdi:chevron-down'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            command: DirectionDown
+            device: 52012830
+            entity_id: remote.vardagsrum
+        type: 'custom:button-card'
+      - aspect_ratio: 1/1
+        color_type: card
+        icon: 'mdi:exit-to-app'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            command: Exit
+            device: 52012830
+            entity_id: remote.vardagsrum
+        type: 'custom:button-card'
+    type: horizontal-stack
+  - cards:
+      - aspect_ratio: 1/1
+        color: 'rgb(51, 102, 204)'
+        color_type: card
+        icon: 'mdi:volume-mute'
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            command: Mute
+            device: 52012830
+            entity_id: remote.vardagsrum
+        type: 'custom:button-card'
+      - aspect_ratio: 1/1
+        color: 'rgb(51, 102, 204)'
+        color_type: card
+        icon: 'mdi:volume-source'
+        tap_action:
+          action: call-service
+          service: media_player.volume_set
+          service_data:
+            entity_id: media_player.str_dn1080_dc4afd
+            volume_level: '0.16'
+        type: 'custom:button-card'
+      - aspect_ratio: 1/1
+        color: 'rgb(51, 102, 204)'
+        color_type: card
+        icon: 'mdi:volume-minus'
+        tap_action:
+          action: call-service
+          service: media_player.volume_down
+          service_data:
+            entity_id: media_player.str_dn1080_dc4afd
+        type: 'custom:button-card'
+      - aspect_ratio: 1/1
+        color: 'rgb(51, 102, 204)'
+        color_type: card
+        icon: 'mdi:volume-plus'
+        tap_action:
+          action: call-service
+          service: media_player.volume_up
+          service_data:
+            entity_id: media_player.str_dn1080_dc4afd
+        type: 'custom:button-card'
+    type: horizontal-stack
+type: vertical-stack
